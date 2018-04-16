@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>精通CSS</title>
+    <style type="text/css" media="screen">
+    #branding {
+        width: 70em;
+        height: 10em;
+        position: relative;
+    }
+
+    #branding .tel {
+        position: absolute;
+        right: 1em;
+        bottom: 1em;
+        text-align: right;
+    }
+
+
+    div div {
+        height: 15em;
+        width: 15em;
+        /*float: left;*/
+    }
+
+    .box1 {
+        background-color: blue;
+        /*height: 40em;*/
+        float: left;
+    }
+
+
+    .box2 {
+        background-color: green;
+    }
+
+
+    .box3 {
+        background-color: yellow;
+    }
+
+    .news {
+        background-color: gray;
+        border: solid 1px black;
+    }
+
+    .news p {
+        float: right;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    .external {
+        /*  background: url(./externalLink.png) no-repeat right top;
+            padding-right: 10px;*/
+    }
+
+    /*a {
+        display: block;
+        width:6.6em;
+        line-height: 1.4;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #66a300;
+        background-color: #8cca12;
+        border-radius: 5px;
+        color:#fff;
+        text-shadow: 2px 2px 2px #66a300;
+        box-shadow: 2px 2px 2px #ccc;
+        -webkit-box-reflect:below 2px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.52, transparent), to(white));
+    }
+
+    a:hover, a:focus {
+        background-color: #f7a300;
+        border-color: #ff7400;
+    }*/
+    a.tooltip{
+        position: relative;
+    }
+
+    a.tooltip span{
+        display: none;
+    }
+
+    a.tooltip:hover span, a.tooltip:focus span{
+        display: block;
+        position: absolute;
+        top:1em;
+        left: 2em;
+        padding:0.2em 0.6em;
+        border: 1px solid #996633;
+        background-color: #ffff66;
+        color:#000;
+        width:100%;
+    }
+
+    </style>
+</head>
+
+<body>
+    <!-- <div id="branding">
+        <p class="tel">Tel: 0845 838 6163</p>
+    </div> -->
+    <!-- <div class="news">
+        <div class="box1">
+            
+        </div>
+        <p>
+            官方指南假设你已了解关于 HTML、CSS 和 JavaScript 的中级知识。如果你刚开始学习前端开发，将框架<br>作为你的第一步可能不是最好的主意——掌握好基础知识再来吧！之前有其它框架的使用经验会有帮助，但这不是必需的。
+        </p>
+        <br class="clear">
+    </div> -->
+   <!--  <a class="external" href="http://www.baidu.com">Book Now>></a> -->
+    <p>
+        <a href="http://www.baidu.com" class="tooltip">
+            Andy Budd<span>(This website rocks)</span>
+        </a>
+        is a web developer based in Brighton England.
+    </p>
+</body>
+
+</html>
